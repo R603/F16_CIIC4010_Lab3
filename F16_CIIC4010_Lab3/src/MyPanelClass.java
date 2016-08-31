@@ -20,7 +20,7 @@ public class MyPanelClass extends JPanel {
                         int y1_1 = myInsets.top;
                         int x2 = getWidth() - myInsets.right - 1;
                         int y2 = getHeight() - myInsets.bottom - 1;
-                        int x2_1 = getWidth() - myInsets.left - 1;
+                        int x2_1 = getWidth() - myInsets.left + 1;
                         int y2_1 = getHeight() - myInsets.bottom - 1;
                         int width = x2 - x1;
                         int height = y2 - y1;
@@ -38,7 +38,7 @@ public class MyPanelClass extends JPanel {
                         g.setColor(Color.WHITE);
                         g.drawLine(x1, y1, x2, y2);
                         g.setColor(Color.BLUE);
-                        	g.drawLine(x1_1, y1_1, x2_1, y2_1);
+                        g.drawLine(x1_1, y1_1, x2_1, y2_1);
 
 
 
