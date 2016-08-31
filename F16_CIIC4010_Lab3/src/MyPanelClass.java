@@ -38,7 +38,7 @@ public class MyPanelClass extends JPanel {
                         g.setColor(Color.WHITE);
                         g.drawLine(x1, y1, x2, y2);
                         g.setColor(Color.BLUE);
-                        g.drawLine(x1_1, y1_1, x2_1, y2_1);
+                        	g.drawLine(x1_1, y1_1, x2_1, y2_1);
 
 
 
