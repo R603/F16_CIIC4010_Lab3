@@ -20,7 +20,7 @@ public class MyPanelClass extends JPanel {
                         int y2 = getHeight() - myInsets.bottom - 1;
                         int width = x2 - x1;
                         int height = y2 - y1;
-                        int x_middle = (x2-x1)/2, y_middle=(y2-y1)/2;
+                        //int x_middle = (x2-x1)/2, y_middle=(y2-y1)/2;
                         
                         //Paint the background
                         g.setColor(Color.BLACK);
@@ -33,14 +33,14 @@ public class MyPanelClass extends JPanel {
 //                        g.drawRect(x1+5, y1+5, width-10, height-10);
 //                        
 //                       //Draw lines
-//                        g.setColor(Color.WHITE);
-//                        g.drawLine(x1, y1, x2, y2);
-//                        g.setColor(Color.BLUE);
-//                        g.drawLine(x1, y2, x2, y1);
+                        g.setColor(Color.WHITE);
+                        g.drawLine(x1, y1, x2, y2);
+                        g.setColor(Color.BLUE);
+                        g.drawLine(x1, y2, x2, y1);
                         
                         //Oval
                         g.setColor(Color.LIGHT_GRAY);
-                        g.fillOval(x_middle, y_middle, 55, 55);
+                        g.fillOval(width/2, height/2, 55, 55);
                         
                         
                         
