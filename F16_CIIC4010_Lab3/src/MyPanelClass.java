@@ -2,6 +2,7 @@ import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Insets;
 import java.awt.Polygon;
+import java.awt.Rectangle;
 
 import javax.swing.JPanel;
  
@@ -24,7 +25,7 @@ public class MyPanelClass extends JPanel {
                         int height = y2 - y1;
                         
                         //Paint the background
-                        g.setColor(Color.BLACK);
+                        g.setColor(Color.WHITE);
                         g.fillRect(x1, y1, width + 1, height + 1);
                         
 //                        //Draw a border
@@ -32,28 +33,26 @@ public class MyPanelClass extends JPanel {
 //                        g.drawRect(x1, y1, width, height);
 //                        g.setColor(Color.RED);
 //                        g.drawRect(x1+5, y1+5, width-10, height-10);
-//                       
-//                        //Draw lines
+                       
+                        //Draw lines
 //                        g.setColor(Color.WHITE);
 //                        g.drawLine(x1, y1, x2, y2);
 //                        g.setColor(Color.BLUE);
 //                        g.drawLine(x1, y2, x2, y1);
-//                        
-//                        //Oval//
+                        
+                        //Oval//
 //                        g.setColor(Color.LIGHT_GRAY);
 //                        g.fillOval(width/2 - 55/2, height/2 - 55/2, 55, 55);
+//                        
+                       //Triangulo
+                        Polygon p = new Polygon();
+                        p.addPoint(x1 + 0, y1 + 0); //Puntos de esquina derecha
+                        p.addPoint(x1 + 0, y1 + 230);
+                        p.addPoint(x1 + 115, y1 + 115);
+                        g.setColor(Color.BLUE);
+                        g.fillPolygon(p);
                         
-//                        Polygon p = new Polygon();
-//                        p.addPoint(x1 + 5, y1 + 25);
-//                        p.addPoint(x1 + 20, y1 + 10);
-//                        p.addPoint(x1 + 35, y1 + 25);
-//                        p.addPoint(x1 + 25, y1 + 25);
-//                        p.addPoint(x1 + 25, y1 + 45);
-//                        p.addPoint(x1 + 15, y1 + 45);
-//                        p.addPoint(x1 + 15, y1 + 25);
-//                        g.setColor(Color.YELLOW);
-//                        g.fillPolygon(p);
-                        
+                        //Estrella
                         Polygon p2 = new Polygon();
                         p2.addPoint(x1 + 25, y1 + 73);
                         p2.addPoint(x1 + 41, y1 + 73);
